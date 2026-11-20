@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#c8c1df" />
+    <meta name="description" content="Pequenos encantos feitos à mão. Conheça os doces artesanais da Doce Alquimia." />
+    <title>Doce Alquimia — pequenos encantos feitos à mão</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement"><span class="sparkle">✦</span> Doces artesanais desde 2023 <span class="announcement-dot">·</span> feitos com carinho em cada detalhe</div>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Doce Alquimia, início">
+        <span class="brand-mark"><span>✦</span> DA <span>✦</span></span>
+        <span class="brand-name">doce alquimia</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#cardapio">Cardápio</a><a href="#nossa-magia">Nossa magia</a><a href="#entrega">Entrega</a>
+      </nav>
+      <button class="cart-trigger" id="open-cart" aria-label="Abrir carrinho">
+        <span class="bag-icon" aria-hidden="true">♧</span><span class="cart-label">Minha sacola</span><span class="cart-count" id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> pequenos encantos feitos à mão</div>
+          <h1>Um docinho<br />e <em>tudo fica</em><br /><em>mais mágico.</em></h1>
+          <p>Receitas feitas com afeto, ingredientes gostosos e uma pitada de magia. Escolha seu encanto favorito.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#cardapio">Quero um docinho <span>↗</span></a><span class="made-note">✳ produção artesanal<br />em pequenos lotes</span></div>
+          <span class="hero-doodle doodle-star">✳</span><span class="hero-doodle doodle-spark">✦</span>
+        </div>
+        <div class="hero-art" aria-label="Gato bruxinho da Doce Alquimia">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <span class="floating f-star">✦</span><span class="floating f-moon">☾</span><span class="floating f-dot">✧</span>
+          <div class="spell-card"><span>feito à mão</span><b>com amor</b><span>e um tantinho de magia</span></div>
+          <img src="assets/gato-bruxinho.png" alt="Gatinho preto de chapéu de bruxa segurando um fouet" class="hero-cat" />
+          <div class="round-stamp"><span>✦ DA ✦</span><small>ALQUIMIA GOURMET</small></div>
+        </div>
+        <div class="hero-bottom"><span>✦</span> UMA RECEITA DE CADA VEZ <span class="line"></span> COM CARINHO, DO NOSSO CALDEIRÃO PARA VOCÊ <span>✦</span></div>
+      </section>
+
+      <section class="promise-strip" aria-label="Diferenciais">
+        <div>♡ <span>feito à mão</span></div><i></i><div>✳ <span>ingredientes selecionados</span></div><i></i><div>☾ <span>um mimo em cada pedido</span></div>
+      </section>
+
+      <section class="menu-section section-wrap" id="cardapio">
+        <div class="section-heading">
+          <div class="menu-heading-copy"><div class="eyebrow"><span></span> direto do caldeirão</div><h2>Escolha sua <em>poção</em><br />de felicidade.</h2>
+            <span class="whisk-flourish" aria-hidden="true"><svg viewBox="0 0 100 120" fill="none"><path d="M48 111 52 66"/><path d="M52 68C36 54 24 34 30 12c15 11 22 31 22 55"/><path d="M52 68C66 51 78 31 70 10 57 22 51 43 52 67"/><path d="M51 68C43 46 40 23 50 5c10 18 9 40 2 63"/><path d="M49 72 45 110c2 7 10 8 13 1l-5-39"/></svg><span>whisk!</span></span>
+          </div>
+          <p>Tem docinho para dividir, para presentear ou para guardar só para você. Qual vai ser?</p>
+        </div>
+        <div class="category-tabs" role="group" aria-label="Filtrar produtos">
+          <button class="category-tab active" data-category="todos">Todos os encantos</button><button class="category-tab" data-category="bolos">Bolos &amp; brownies</button><button class="category-tab" data-category="docinhos">Docinhos</button><button class="category-tab" data-category="presentes">Para presentear</button>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <div class="menu-footnote"><span>✧</span> Cardápio demonstrativo — sabores e valores podem ser ajustados para a loja.</div>
+      </section>
+
+      <section class="magic-section" id="nossa-magia">
+        <div class="magic-confetti" aria-hidden="true"><span>✦</span><span>✧</span><span>✳</span><span>✦</span><span>·</span><span>✧</span></div>
+        <div class="magic-inner">
+          <div class="eyebrow eyebrow-light"><span></span> nossa magia</div><h2>Tem carinho<br />em cada <em>mistura.</em></h2>
+          <p>A Doce Alquimia nasceu da vontade de transformar ingredientes simples em momentos especiais. Tudo é preparado em pequenos lotes, com capricho de verdade — porque você merece um pedacinho de encanto no seu dia.</p>
+          <a href="#cardapio" class="text-link">Descobrir o cardápio <span>↗</span></a>
+        </div>
+        <div class="cauldron-art" aria-hidden="true"><div class="steam s1">〰</div><div class="steam s2">〰</div><div class="steam s3">〰</div><div class="cauldron">☾<div class="cauldron-stars">✦　·　✧</div></div><span class="orbiting-star">✦</span><span class="orbiting-heart">♡</span></div>
+        <div class="magic-caption">receitas<br /><b>com intenção</b></div>
+      </section>
+
+      <section class="delivery-section section-wrap" id="entrega">
+        <div class="delivery-icon">✉</div><div><div class="eyebrow"><span></span> um mimo chegando</div><h2>Do nosso forno<br />até <em>sua porta.</em></h2><p>Informe seu endereço na sacola e a gente confirma a entrega pelo WhatsApp. A taxa de demonstração é calculada junto com o pedido.</p></div><a class="button button-outline" href="#cardapio">Montar meu pedido <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="#inicio">doce alquimia <span>✦</span></a><span>Pequenos encantos feitos à mão.</span><span>© 2026 Doce Alquimia</span></footer>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="drawer-head"><div><div class="eyebrow"><span></span> quase um encanto</div><h2 id="cart-title">Sua sacola</h2></div><button class="icon-button" id="close-cart" aria-label="Fechar sacola">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="empty-cart" id="empty-cart"><span>☾</span><h3>Seu caldeirão está vazio</h3><p>Escolha um docinho para começar a magia.</p><button class="text-link" id="continue-shopping">Ver o cardápio ↗</button></div>
+      <form class="checkout" id="checkout-form">
+        <label for="customer-name">Seu nome</label><input id="customer-name" name="name" autocomplete="name" placeholder="Como podemos te chamar?" required />
+        <label for="customer-address">Endereço de entrega</label><textarea id="customer-address" name="address" autocomplete="street-address" placeholder="Rua, número, bairro e complemento" rows="2" required></textarea>
+        <div class="fee-note"><span>Taxa de entrega</span><span id="fee-value">R$ 8,90</span></div>
+        <div class="total-row"><span>Total do pedido</span><strong id="cart-total">R$ 0,00</strong></div>
+        <button class="button button-dark checkout-button" type="submit" id="checkout-button">Finalizar pelo WhatsApp <span>↗</span></button>
+        <p class="checkout-note">O WhatsApp abre com seu pedido pronto para revisar e enviar.</p>
+      </form>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
